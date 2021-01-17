@@ -18,4 +18,3 @@ spec:
     storage:
       classes: ["kubernetes-gold-storage-policy"]              #Named PVC storage classes
       defaultClass: kubernetes-gold-storage-policy             #Default PVC storage class
-© 2021 GitHub, Inc.
