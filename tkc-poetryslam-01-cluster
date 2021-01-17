@@ -18,6 +18,11 @@ spec:
     storage:
       classes: ["kubernetes-gold-storage-policy"]              #Named PVC storage classes
       defaultClass: kubernetes-gold-storage-policy             #Default PVC storage class
+#
 #   distribution:
-#    version: v1.1.5
+#    version: v1.18.5
 # Bemerkung: Antrea statt Calico ab v1.17.7
+#
+#   network: 
+#     name:	calico 
+#     name: calico oder antrea
