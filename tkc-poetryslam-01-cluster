@@ -12,7 +12,7 @@ spec:
       storageClass: kubernetes-gold-storage-policy
     workers:
       class: best-effort-xsmall
-      count: 2
+      count: 1
       storageClass: kubernetes-gold-storage-policy
   settings:
     storage:
