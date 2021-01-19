@@ -20,8 +20,10 @@ spec:
       defaultClass: kubernetes-gold-storage-policy             #Default PVC storage class
     network:
       cni:
-        name: antrea                                           #Antrea oder calico
+        name: antrea                                           #antrea oder calico. Antrea ab v1.17.7 default
 #      services:
 #        cidrBlocks: ["198.51.100.0/12"]
 #      pods:
 #        cidrBlocks: ["192.0.2.0/16"]
+#   distribution:
+#    version: v1.18.5                                          #Bemerkung: Antrea statt Calico ab v1.17.7
