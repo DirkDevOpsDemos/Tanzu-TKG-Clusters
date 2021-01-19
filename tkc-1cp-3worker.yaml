@@ -14,4 +14,14 @@ spec:
       class: guaranteed-small
       count: 3
       storageClass: kubernetes-gold-storage-policy
-      
+  settings:
+    storage:
+      classes: ["kubernetes-gold-storage-policy"]              #Named PVC storage classes
+      defaultClass: kubernetes-gold-storage-policy             #Default PVC storage class
+    network:
+      cni:
+        name: antrea                                           #Antrea oder calico
+#      services:
+#        cidrBlocks: ["198.51.100.0/12"]
+#      pods:
+#        cidrBlocks: ["192.0.2.0/16"]
