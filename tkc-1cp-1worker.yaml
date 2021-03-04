@@ -2,10 +2,10 @@
 apiVersion: run.tanzu.vmware.com/v1alpha1
 kind: TanzuKubernetesCluster
 metadata:
-  name: tkc-dirk-03
+  name: tkc-dirk-02
 spec:
   distribution:
-    version: v1.18
+    version: v1.19.7
   topology:
     controlPlane:
       class: guaranteed-small
