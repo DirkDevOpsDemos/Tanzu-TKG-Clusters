@@ -2,7 +2,7 @@
 apiVersion: run.tanzu.vmware.com/v1alpha1
 kind: TanzuKubernetesCluster
 metadata:
-  name: tkc-presales
+  name: tkc-marcus-01
 spec:
   distribution:
     version: v1.19
