@@ -10,11 +10,11 @@ spec:
     controlPlane:
       class: guaranteed-small
       count: 1
-      storageClass: kubernetes-gold-storage-policy
+      storageClass: kubernetes-nfs-policy
     workers:
       class: guaranteed-small
       count: 1
-      storageClass: kubernetes-gold-storage-policy
+      storageClass: kubernetes-nfs-policy
   settings:
     storage:
       classes: ["kubernetes-gold-storage-policy"]              #Named PVC storage classes
