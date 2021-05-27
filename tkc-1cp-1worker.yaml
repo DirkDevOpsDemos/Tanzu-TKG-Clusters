@@ -17,8 +17,8 @@ spec:
       storageClass: kubernetes-gold-storage-policy
   settings:
     storage:
-      classes: ["kubernetes-nfs-policy"]              #Named PVC storage classes
-      defaultClass: kubernetes-nfs-policy             #Default PVC storage class
+      classes: ["kubernetes-gold-storage-policy"]              #Named PVC storage classes
+      defaultClass: kubernetes-gold-storage-policy             #Default PVC storage class
     network:
       cni:
         name: antrea                                           #antrea oder calico. Antrea ab v1.17.7 default
