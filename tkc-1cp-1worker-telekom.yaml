@@ -1,7 +1,7 @@
 apiVersion: run.tanzu.vmware.com/v1alpha1
 kind: TanzuKubernetesCluster
 metadata:
-  name: tkc-cloudbytes-01
+  name: tkc-telekom-01
 spec:
   distribution:
     version: v1.19
