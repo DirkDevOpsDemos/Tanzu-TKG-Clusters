@@ -2,7 +2,7 @@
 apiVersion: run.tanzu.vmware.com/v1alpha1
 kind: TanzuKubernetesCluster
 metadata:
-  name: tkc-rku-01
+  name: tkc-robert-01
 spec:
   distribution:
     version: v1.19
