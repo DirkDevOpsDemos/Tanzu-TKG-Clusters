@@ -19,9 +19,9 @@ spec:
     storage:
       classes: ["avi-tanzu-vsan-storage-policy"]              #Named PVC storage classes
       defaultClass: avi-tanzu-vsan-storage-policy             #Default PVC storage class
-    network:
-      cni:
-        name: antrea                                           #antrea oder calico. Antrea ab v1.17.7 default
+#    network:
+#      cni:
+#        name: antrea                                           #antrea oder calico. Antrea ab v1.17.7 default
 #      services:
 #        cidrBlocks: ["198.51.100.0/12"]
 #      pods:
