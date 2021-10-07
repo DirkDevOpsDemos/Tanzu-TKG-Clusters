@@ -5,20 +5,20 @@ metadata:
   name: tkc-dirk-01
 spec:
   distribution:
-    version: v1.19
+    version: v1.20
   topology:
     controlPlane:
       class: guaranteed-small
       count: 1
-      storageClass: kubernetes-gold-storage-policy
+      storageClass: avi-tanzu-vsan-storage-policy
     workers:
       class: guaranteed-small
       count: 1
-      storageClass: kubernetes-gold-storage-policy
+      storageClass: avi-tanzu-vsan-storage-policy
   settings:
     storage:
-      classes: ["kubernetes-gold-storage-policy"]              #Named PVC storage classes
-      defaultClass: kubernetes-gold-storage-policy             #Default PVC storage class
+      classes: ["avi-tanzu-vsan-storage-policy"]              #Named PVC storage classes
+      defaultClass: avi-tanzu-vsan-storage-policy             #Default PVC storage class
     network:
       cni:
         name: antrea                                           #antrea oder calico. Antrea ab v1.17.7 default
