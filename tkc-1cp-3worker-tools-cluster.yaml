@@ -4,26 +4,29 @@ metadata:
   name: tkc-tools
 spec:
   distribution:
-    version: v1.19
+    version: v1.21
   topology:
     controlPlane:
-      class: guaranteed-small
+      class: guaranteed-medium
       count: 1
-      storageClass: kubernetes-gold-storage-policy
+      storageClass: avi-tanzu-vsan-storage-policy
     workers:
-      class: guaranteed-small
+      class: guaranteed-medium
       count: 3
-      storageClass: kubernetes-gold-storage-policy
+      storageClass: avi-tanzu-vsan-storage-policy
   settings:
     storage:
-      classes: ["kubernetes-gold-storage-policy"]              #Named PVC storage classes
-      defaultClass: kubernetes-gold-storage-policy             #Default PVC storage class
-    network:
-      cni:
-        name: antrea                                           #antrea oder calico. Antrea ab v1.17.7 default
+      classes: ["avi-tanzu-vsan-storage-policy"]              #Named PVC storage classes
+      defaultClass: avi-tanzu-vsan-storage-policy             #Default PVC storage class
+#    network:
+#      cni:
+#        name: antrea                                           #antrea oder calico. Antrea ab v1.17.7 default
 #      services:
 #        cidrBlocks: ["198.51.100.0/12"]
 #      pods:
 #        cidrBlocks: ["192.0.2.0/16"]
 #   distribution:
 #    version: v1.18.5                                          #Bemerkung: Antrea statt Calico ab v1.17.7
+© 2021 GitHub, Inc.
+Terms
+Privac
