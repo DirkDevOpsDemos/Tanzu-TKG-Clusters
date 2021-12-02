@@ -27,8 +27,3 @@ spec:
 #        cidrBlocks: ["192.0.2.0/16"]
 #   distribution:
 #    version: v1.18.5                                          #Bemerkung: Antrea statt Calico ab v1.17.7
-© 2021 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
