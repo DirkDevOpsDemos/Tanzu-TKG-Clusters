@@ -1,7 +1,7 @@
 apiVersion: run.tanzu.vmware.com/v1alpha1
 kind: TanzuKubernetesCluster
 metadata:
-  name: tkc-sb-01
+  name: tkc-diebayrische
 spec:
   distribution:
     version: v1.21
