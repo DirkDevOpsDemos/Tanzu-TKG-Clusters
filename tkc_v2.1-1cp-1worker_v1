@@ -1,7 +1,7 @@
 apiVersion: run.tanzu.vmware.com/v1alpha3
 kind: TanzuKubernetesCluster
 metadata:
-  name: tkc-dirk_01
+  name: tkc-dirk-01
   namespace: tkg-dirk
 spec:
   topology:
