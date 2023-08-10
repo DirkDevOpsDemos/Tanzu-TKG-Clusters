@@ -1,0 +1,26 @@
+apiVersion: run.tanzu.vmware.com/v1alpha3
+kind: TanzuKubernetesCluster
+metadata:
+  name: tkc-dirk_01
+  namespace: tkg-dirk
+spec:
+  topology:
+    controlPlane:
+      replicas: 1
+      vmClass: best-effort-medium
+      storageClass: avi-tanzu-vsan-storage-policy
+      tkr:  
+        reference:
+          name: v1.24.9---vmware.1-tkg.4
+    nodePools:
+    - name: worker
+      replicas: 3
+      vmClass: best-effort-medium
+      storageClass: avi-tanzu-vsan-storage-policy
+      tkr:  
+        reference:
+          name: v1.24.9---vmware.1-tkg.4
+  settings:
+    storage:
+      classes: ["avi-tanzu-vsan-storage-policy"]              #Named PVC storage classes
+      defaultClass: avi-tanzu-vsan-storage-policy             #Default PVC storage class
